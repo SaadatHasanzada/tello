@@ -1,0 +1,11 @@
+@import "../../../assets/styles/variables.scss";
+.type {
+  margin-bottom: 1.3rem;
+  div {
+    padding-left: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    color: $gray;
+    margin-bottom: 0.7rem;
+  }
+}

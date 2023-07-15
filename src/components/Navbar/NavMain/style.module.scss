@@ -1,0 +1,29 @@
+@import "../../../assets/styles/variables.scss";
+.nav {
+  padding: 1rem;
+  padding-bottom: 0.4rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: repeat(2, auto);
+  column-gap: 1.7rem;
+  row-gap: 0.6rem;
+  align-items: center;
+  background-color: $primary-color;
+  position: relative;
+  z-index: 5;
+}
+.border_bottom {
+  border-bottom: 1px solid $green;
+}
+
+@media screen and (min-width: $md) {
+  .nav {
+    padding: 1rem 5%;
+    row-gap: 0;
+    // z-index: 5;
+  }
+  .border_bottom {
+    border-bottom: 1px solid $green;
+  }
+}

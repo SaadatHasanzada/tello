@@ -1,0 +1,13 @@
+@import '../../../assets/styles/variables.scss';
+.logo{
+  display: flex;
+gap: .8rem;
+align-items: center;
+}
+
+    h1{
+      font-size: 2.1rem;
+      color: $green;
+      font-weight: 500;
+      
+    }

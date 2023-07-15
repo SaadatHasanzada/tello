@@ -1,0 +1,32 @@
+@import "../../../assets/styles/variables.scss";
+.productProporty {
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  h2 {
+    font-size: 20px;
+    color: $tab-color;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+  p {
+    padding-left: 0.5rem;
+    color: $gray;
+  }
+}
+
+@media screen and (min-width: $md) {
+  .productProporty {
+    padding: 1.5rem 5%;
+    flex-direction: row;
+
+    .description {
+      order: 2;
+    }
+    div {
+      flex: 1;
+      padding: 0 2.3rem;
+    }
+  }
+}

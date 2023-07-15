@@ -1,0 +1,36 @@
+@import "../../assets//styles/variables.scss";
+.product_listing {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 1px solid #edf1f7;
+
+  button {
+    flex: 1;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: $primary-color;
+    padding: 0.5rem;
+    font-weight: 500;
+    color: #303030;
+    font-size: 14px;
+    font-family: "Euclid Circular A", sans-serif;
+    border-right: 1px solid #edf1f7;
+    cursor: pointer;
+    &:first-child {
+      position: relative;
+    }
+    &:last-child {
+      border: none;
+    }
+  }
+}
+
+@media screen and (min-width: $md) {
+  .product_listing {
+    display: none;
+  }
+}

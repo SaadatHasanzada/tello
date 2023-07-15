@@ -1,0 +1,47 @@
+@import "../../../assets/styles/variables.scss";
+.sort {
+  position: absolute;
+  width: 100%;
+  top: 160%;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  .selected,
+  ul {
+    border: 1px solid rgba(189, 189, 189, 1);
+    border-radius: $border-radius;
+    padding: 1rem 0.5rem;
+    background-color: $primary-color;
+    display: flex;
+  }
+  ul {
+    flex-direction: column;
+    gap: 0.7rem;
+    transform: scale(0);
+    transition: all 0.3s ease;
+    transform-origin: center top;
+    position: absolute;
+  }
+  .selected {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.3rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .open {
+    transform: scale(1);
+  }
+}
+
+@media screen and (min-width: $md) {
+  .sort {
+    position: static;
+    width: 200px;
+    justify-self: end;
+    ul {
+      padding: 1rem;
+    }
+  }
+}

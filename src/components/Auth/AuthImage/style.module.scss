@@ -1,0 +1,48 @@
+@import "../../../assets/styles/variables.scss";
+.imgContainer {
+  margin-top: 2rem;
+  align-self: start;
+  p {
+    color: $tab-color;
+    font-size: 14px;
+    font-family: Euclid Circular A;
+    font-weight: normal;
+    text-align: center;
+    a {
+      color: #2d9cdb;
+      cursor: pointer;
+      font-weight: 500;
+    }
+  }
+}
+.images {
+  display: none;
+  position: relative;
+  height: 315px;
+  img {
+    position: absolute;
+    &:first-child {
+      z-index: 1;
+    }
+    &:last-child {
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: $md) {
+  .imgContainer {
+    width: 350px;
+    margin-top: 0;
+  }
+  .images {
+    display: block;
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .imgContainer {
+    width: 450px;
+  }
+}

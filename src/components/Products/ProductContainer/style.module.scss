@@ -1,0 +1,59 @@
+@import "../../../assets/styles/variables.scss";
+.product_section {
+  display: grid;
+  row-gap: 0.5rem;
+  margin-top: 3rem;
+  color: $secondary-color;
+  font-weight: 500;
+
+  .title,
+  .link {
+    padding: 0 1rem;
+  }
+  .link {
+    font-size: 14px;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    color: $secondary-color;
+  }
+  .container {
+    display: flex;
+    overflow-x: scroll;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: space-between;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: $md) {
+  .product_section {
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 1fr, auto;
+
+    .title,
+    .link {
+      padding: 0 10%;
+    }
+    .title {
+      grid-area: 1/1/2/2;
+      font-size: 20px;
+    }
+    .link {
+      grid-area: 1/2/2/3;
+      justify-content: flex-end;
+    }
+    .container {
+      gap: 2rem;
+      padding: 1rem 5%;
+      grid-area: 2/1/3/3;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

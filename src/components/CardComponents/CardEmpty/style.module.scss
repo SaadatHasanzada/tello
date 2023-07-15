@@ -1,0 +1,36 @@
+@import "../../../assets/styles/variables.scss";
+.cardEmpty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  padding: 6rem 1rem;
+  gap: 1.5rem;
+  border-radius: $border-radius;
+  p {
+    color: #bdbdbd !important;
+    font-size: 16px;
+    font-weight: 400 !important;
+    line-height: 24px;
+  }
+  button {
+    background-color: $green;
+    border-radius: $border-radius;
+    width: 280px;
+    height: 48px;
+    font-size: 14px;
+    font-family: Euclid Circular A;
+    font-weight: 500;
+    line-height: 16px;
+    outline: none;
+    border: none;
+    color: $primary-color;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: $md) {
+  .cardEmpty {
+    padding: 7.5rem 1rem;
+  }
+}

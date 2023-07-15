@@ -1,0 +1,58 @@
+@import "../../../assets/styles/variables.scss";
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  max-width: 750px;
+  h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    color: $secondary-color;
+    margin-bottom: 1.3rem;
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    color: $tab-color;
+    gap: 0.5rem;
+    margin-bottom: 1.8rem;
+
+    input,
+    select,
+    textarea {
+      border: none;
+      border-radius: $border-radius;
+      background-color: #f2f2f2;
+      padding: 0.7rem 1rem;
+      outline: none;
+
+      font-family: Euclid Circular A;
+    }
+    select {
+      color: $gray;
+    }
+  }
+  button {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: $primary-color;
+    padding: 1rem 3.4rem;
+    border: none;
+    border-radius: $border-radius;
+    background: $green;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: $md) {
+  .form .personInfo {
+    display: flex;
+    gap: 2rem;
+    label {
+      flex: 1;
+    }
+  }
+}

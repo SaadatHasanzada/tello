@@ -1,0 +1,23 @@
+@import "../../assets/styles/variables.scss";
+.detail {
+  padding: 0 1rem;
+  .product_container {
+    display: grid;
+    gap: 2.5rem;
+    margin-top: 2rem;
+  }
+}
+.loading {
+  margin: 7rem auto;
+  display: block;
+}
+@media screen and (min-width: $md) {
+  .detail {
+    padding: 0 5%;
+    .product_container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 3.5rem;
+    }
+  }
+}

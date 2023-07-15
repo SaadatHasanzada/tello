@@ -1,0 +1,115 @@
+@import "../../../assets/styles/variables.scss";
+.filter_type {
+  margin-bottom: 1.3rem;
+  .type_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #bdbdbd;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    color: $tab-color;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    .icon {
+      div {
+        background-color: #4f4f4f;
+        width: 16px;
+        height: 2px;
+        cursor: pointer;
+        &:first-of-type {
+          transform: translateY(100%) rotate(90deg);
+          transition: all 0.3s ease-in-out;
+        }
+        &:first-of-type.active {
+          transform: translateY(100%) rotate(0deg);
+        }
+      }
+    }
+  }
+}
+
+.filter_type {
+  .options {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    ul {
+      width: 100%;
+    }
+    li {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0 1rem;
+      color: $tab-color;
+      font-size: 14px;
+      font-weight: 400;
+      div {
+        width: 20px;
+        height: 20px;
+        border-radius: 3px;
+        background-color: rgba(0, 214, 143, 0.16);
+        border: 1px solid #2dd06e;
+        &.checked {
+          background-color: #2dd06e;
+          background-image: url(../../../assets//images/checked.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+    .price {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+
+      .divider {
+        width: 24px;
+        height: 1px;
+        background-color: #e0e0e0;
+      }
+      .input {
+        display: flex;
+        align-items: center;
+        border: 1px solid #e0e0e0;
+        border-radius: $border-radius;
+        justify-content: space-between;
+        padding: 1rem;
+        width: 30%;
+
+        input {
+          max-width: 80%;
+          outline: none;
+          border: none;
+          color: $tab-color;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  .showOptions {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: $md) {
+  .filter_type {
+    margin-bottom: 0rem;
+    z-index: 1;
+    .options > .price > .input {
+      width: 40%;
+    }
+
+    .type_header {
+      margin-bottom: 0rem;
+    }
+    .options {
+      padding: 2rem 0 1.5rem 0;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../assets/styles/variables.scss";
+.user {
+  padding: 2rem 1rem 4rem 1rem;
+  background-color: #faf9f9;
+  display: grid;
+  gap: 1rem;
+}
+@media screen and (min-width: $md) {
+  .user {
+    padding: 2rem 5% 7rem 5%;
+    gap: 2rem;
+    grid-template-columns: 300px auto;
+  }
+}

@@ -1,0 +1,101 @@
+@import "../../../assets/styles/variables.scss";
+.cardProduct {
+  background-color: $primary-color;
+  padding: 2rem 1.5rem;
+  display: flex;
+  border-radius: $border-radius;
+  justify-content: space-between;
+  align-items: flex-start;
+  cursor: pointer;
+  .productInfo {
+    display: grid;
+    flex-grow: 1;
+    gap: 0.7rem;
+    color: $secondary-color;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+    img {
+      width: 113px;
+      height: 163px;
+      flex-shrink: 0;
+      justify-self: center;
+      margin-bottom: 1rem;
+      grid-column: 1/3;
+    }
+    h2 {
+      text-align: center;
+      font-weight: 500;
+      line-height: 20px;
+      font-size: 16px;
+      grid-column: 1/3;
+    }
+    p {
+      font-size: 14px;
+      color: $gray;
+      font-weight: normal;
+      margin-bottom: 0;
+      grid-column: 1/3;
+      span {
+        color: $secondary-color;
+      }
+    }
+    .price {
+      color: #db2c66;
+      font-size: 16px;
+      font-weight: 500;
+      vertical-align: middle;
+      display: flex;
+      align-items: center;
+    }
+    .count {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      align-items: center;
+      font-size: 16px;
+      margin-bottom: 0;
+      div {
+        padding: 0.1rem 0.7rem;
+        color: $tab-color;
+        font-size: 1.3rem;
+        cursor: pointer;
+      }
+    }
+  }
+  img {
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: $md) {
+  .cardProduct {
+    align-items: center;
+    gap: 1rem;
+    .productInfo {
+      grid-template-columns: auto 1fr 1fr 1fr;
+      column-gap: 2.5rem;
+      img {
+        width: 50px;
+        height: 72px;
+        grid-area: 1/1/3/2;
+      }
+      h2 {
+        grid-area: 1/2/2/4;
+        text-align: left;
+      }
+      p {
+        grid-area: 2/2/3/3;
+      }
+      .price {
+        grid-area: 2/3/3/4;
+      }
+      .changeArea {
+        grid-area: 2/2/3/4;
+      }
+      .count {
+        grid-area: 1/4/3/5;
+      }
+    }
+  }
+}

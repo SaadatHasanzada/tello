@@ -1,0 +1,48 @@
+@import "../../../assets/styles/variables.scss";
+.menu {
+  background-color: $primary-color;
+  padding: 2rem 1rem;
+  border-radius: $border-radius;
+  h2 {
+    color: #1d2123;
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 1.5rem;
+  }
+  ul {
+    display: flex;
+
+    flex-direction: column;
+    gap: 1.5rem;
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      color: var(--gray-gray-1, #333);
+      cursor: pointer;
+      font-size: 16px;
+
+      font-weight: 400;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .active {
+      color: $green;
+      img {
+        transition: all 0.3s ease;
+        filter: brightness(0) saturate(100%) invert(79%) sepia(35%)
+          saturate(7362%) hue-rotate(96deg) brightness(114%) contrast(65%);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $md) {
+  .menu {
+    height: max-content;
+  }
+}

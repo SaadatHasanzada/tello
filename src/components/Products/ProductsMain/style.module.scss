@@ -1,0 +1,41 @@
+@import "../../../assets/styles/variables.scss";
+.products {
+  padding: 1rem;
+  .load {
+    margin: 0 auto;
+    display: block;
+  }
+  .count {
+    color: $secondary-color;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+  }
+  .product_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    gap: 2rem 1.3rem;
+  }
+}
+
+@media screen and (min-width: $md) {
+  .products {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    .load {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    .count {
+      margin-bottom: 2rem;
+    }
+    .product_container {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, auto);
+      grid-column-start: 1;
+      grid-column-end: 3;
+      gap: 2rem 1.7rem;
+    }
+  }
+}

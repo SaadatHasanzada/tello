@@ -1,0 +1,10 @@
+@import "../../../assets/styles/variables.scss";
+.commentContainer {
+  padding: 2rem 1rem;
+}
+
+@media screen and (min-width: $md) {
+  .commentContainer {
+    padding: 0 5%;
+  }
+}

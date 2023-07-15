@@ -1,0 +1,26 @@
+@import '../../../assets//styles/variables.scss';
+.footer{
+    background-color: #262626;
+    padding-top: 2.5rem;
+    color: rgba(255,255,255,.8);
+    font-size: 1rem;
+    font-weight: 400;
+    .footer_top{
+        padding:0 1rem;
+        display: flex;
+        flex-direction: column;
+align-items: center;
+gap: 2rem;
+    }
+}
+
+@media screen and (min-width:$md) {
+    .footer>.footer_top{
+        flex-direction: row;
+        padding: 0rem 5% 5rem 5%;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 0;
+    }
+}
+

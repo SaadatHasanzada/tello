@@ -1,0 +1,110 @@
+@import "../../../assets/styles/variables.scss";
+
+.productVariants {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-bottom: 1px solid #f2f2f2;
+  border-top: 1px solid #f2f2f2;
+  padding: 1.5rem 0;
+}
+
+.product_colors,
+.productSize {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  .size {
+    background-color: #f2f2f2;
+    color: $tab-color;
+    padding: 0.5rem 1rem;
+    border-radius: $border-radius;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    &:hover {
+      background-color: $gray;
+      color: #fff;
+    }
+  }
+  .color {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+
+    cursor: pointer;
+    border: 1px solid #e0e0e0;
+  }
+  .active {
+    border: 2px solid #2dd06e;
+  }
+  .activeSize {
+    background-color: $tab-color;
+    color: #fff;
+  }
+}
+
+.productHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding-bottom: 1rem;
+  font-weight: 500;
+
+  p {
+    font-size: 20px;
+  }
+  .productRatings {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    span:first-of-type {
+      font-size: 12px;
+      border-right: 1px solid #f2f2f2;
+      padding-right: 0.5rem;
+    }
+    span:last-of-type {
+      color: #2d9cdb;
+      font-size: 14px;
+    }
+  }
+  .price {
+    color: #db2c66;
+    font-size: 20px;
+  }
+}
+
+.card {
+  padding: 1rem 0;
+  .count {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    font-size: 20px;
+    div {
+      padding: 0.1rem 0.7rem;
+      border-radius: 50%;
+      background-color: #f2f2f2;
+      color: $tab-color;
+      font-size: 1.3rem;
+      cursor: pointer;
+    }
+  }
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0.8rem 2rem;
+    background-color: $green;
+    border-radius: $border-radius;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    font-family: Euclid Circular A;
+    border: none;
+    outline: none;
+    gap: 0.9rem;
+  }
+}

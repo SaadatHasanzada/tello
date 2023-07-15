@@ -1,0 +1,72 @@
+@import "../../../assets/styles/variables.scss";
+.comment {
+  text-align: center;
+  border-bottom: 1px solid #bdbdbd;
+  margin-bottom: 2rem;
+  padding: 1.5rem 0;
+  .reviewHeader {
+    padding: 0 5rem;
+    margin-bottom: 1.5rem;
+    span:first-of-type {
+      color: black;
+      font-size: 56px;
+      display: block;
+      margin-bottom: 1rem;
+    }
+    .stars {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      border-bottom: 1px solid #c4c4c4;
+      padding: 1.5rem 0.5rem;
+      img {
+        width: 22.9px;
+        height: 22.9px;
+      }
+    }
+  }
+  .reviewBody {
+    color: $tab-color;
+    padding: 1rem 0;
+
+    h2 {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 0.7rem;
+    }
+    span {
+      font-size: 12px;
+      margin-bottom: 2rem;
+      display: block;
+    }
+    p {
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (min-width: $md) {
+  .comment {
+    display: flex;
+    margin-bottom: 0;
+    .reviewHeader {
+      padding: 0 3rem;
+      margin-bottom: 0;
+
+      align-self: center;
+      .stars {
+        border-bottom: none;
+        img {
+          width: 27.43px;
+          height: 27.43px;
+        }
+      }
+    }
+    .reviewBody {
+      text-align: left;
+      padding-right: 10%;
+      padding-left: 2rem;
+      border-left: 1px solid #c4c4c4;
+    }
+  }
+}

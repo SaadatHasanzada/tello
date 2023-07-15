@@ -1,0 +1,110 @@
+@import "../../../assets/styles/variables.scss";
+.userContainer {
+  width: 100%;
+  h2 {
+    color: $tab-color;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+  form {
+    margin-top: 1.5rem;
+    background-color: $primary-color;
+    padding: 2rem 1rem;
+    border-radius: $border-radius;
+
+    .formGroup {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: 1.8rem;
+      p {
+        text-align: right;
+        color: #36f;
+        font-size: 14px;
+        font-family: Euclid Circular A;
+        font-weight: 500;
+      }
+      span {
+        font-size: 14px;
+        color: #db4437;
+      }
+    }
+
+    input {
+      width: 100%;
+      height: 48px;
+      background-color: #f2f2f2;
+      outline: none;
+      border: none;
+      border-radius: $border-radius;
+
+      padding: 0 1rem;
+      &::placeholder {
+        font-family: Euclid Circular A;
+        color: $gray;
+      }
+    }
+    label {
+      color: $tab-color;
+
+      font-size: 14px;
+    }
+    .formPassword,
+    .formPhone {
+      display: flex;
+      background-color: #f2f2f2;
+      border-radius: $border-radius;
+      padding-right: 1rem;
+      img {
+        cursor: pointer;
+      }
+    }
+    .formPhone select {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      border-radius: $border-radius;
+      padding: 0rem 0.5rem 0 1rem;
+    }
+
+    .edit {
+      background-color: $green;
+      border-radius: $border-radius;
+      margin-top: 1.5rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 1rem;
+      input {
+        color: $primary-color;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        background-color: transparent;
+        width: max-content;
+      }
+      .disabled {
+        cursor: not-allowed !important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $md) {
+  .userContainer {
+    max-width: 700px;
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 2rem;
+    }
+    .edit {
+      width: 50%;
+      margin: 0 auto;
+      grid-column: 1/3;
+      margin-top: 0;
+    }
+  }
+}

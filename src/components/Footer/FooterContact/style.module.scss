@@ -1,0 +1,35 @@
+@import '../../../assets/styles/variables.scss';
+.list{
+    p{
+        font-weight: 500;
+        font-size: 20px;
+        color: rgba(255,255,255,1);
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    li{
+        margin: 0 auto;
+        margin-bottom: 1.2rem;
+        transition: .3s all ease;
+      display: flex;
+      align-items: center;
+      gap: .7rem;
+      max-width: 85%;
+      
+        &:hover{
+            color: $green;
+        }
+    }
+}
+@media screen and (min-width:$md) {
+    .list{
+       p {
+        text-align: left;
+    } 
+    li{
+max-width: 100%;
+margin-left: 0;
+align-items: flex-start;
+    }
+    }
+}

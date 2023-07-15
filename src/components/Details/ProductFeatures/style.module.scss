@@ -1,0 +1,40 @@
+@import "../../../assets/styles/variables.scss";
+
+.featureButtons {
+  display: flex;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 0 1rem;
+
+  button {
+    padding: 1rem 0.5rem;
+    border: none;
+    outline: none;
+    color: #a8a8a8;
+    background-color: transparent;
+    font-size: 14px;
+    font-family: Euclid Circular A;
+    font-weight: 500;
+    flex: 1;
+    cursor: pointer;
+  }
+  .active {
+    color: $green;
+    border-bottom: 4px solid $green;
+  }
+}
+@media screen and (min-width: $md) {
+  .featureButtons {
+    margin-top: 4rem;
+    padding: 0 5%;
+    button {
+      font-size: 20px;
+      flex: none;
+      margin-right: 13rem;
+    }
+    .active {
+      color: $tab-color;
+      border-bottom: none;
+    }
+  }
+}

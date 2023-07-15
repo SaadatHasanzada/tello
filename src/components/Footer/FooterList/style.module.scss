@@ -1,0 +1,23 @@
+@import '../../../assets/styles/variables.scss';
+.list{
+    text-align: center;
+    p{
+        font-weight: 500;
+        font-size: 20px;
+        color: rgba(255,255,255,1);
+        margin-bottom: 2rem;
+    }
+    li{
+        margin-bottom: 1rem;
+        transition: .3s all ease;
+        cursor: pointer;
+        &:hover{
+            color: $green;
+        }
+    }
+}
+@media screen and (min-width:$md){
+    .list{
+        text-align: left;
+    }
+}

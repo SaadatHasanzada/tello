@@ -1,0 +1,16 @@
+@import "../../assets/styles/variables.scss";
+.breadcrumb {
+  display: none;
+  padding: 2rem 5% 0 5%;
+  align-items: center;
+  gap: 0.7rem;
+
+  a {
+    color: #4f4f4f;
+  }
+}
+@media screen and (min-width: $md) {
+  .breadcrumb {
+    display: flex;
+  }
+}

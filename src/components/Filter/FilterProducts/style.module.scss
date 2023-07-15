@@ -1,0 +1,63 @@
+@import "../../../assets/styles/variables.scss";
+.filter_products {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: $primary-color;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+  z-index: 5;
+  .filter_types {
+    padding: 1rem;
+  }
+  .filter_header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    border-bottom: 1px solid rgba(48, 48, 48, 0.16);
+    padding: 1rem;
+    p {
+      font-size: 20px;
+      font-weight: 500;
+      color: $secondary-color;
+    }
+  }
+  .filter_btn {
+    width: 84%;
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    color: $primary-color;
+    background-color: $green;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-radius: $border-radius;
+    position: fixed;
+    left: 8%;
+    cursor: pointer;
+  }
+}
+.openMenu {
+  transform: translateX(0);
+}
+
+@media screen and (min-width: $md) {
+  .filter_products {
+    position: static;
+    transform: translateX(0);
+    height: auto;
+    z-index: 0;
+    .filter_types {
+      padding: 0;
+    }
+    .filter_header {
+      display: none;
+    }
+    .filter_btn {
+      display: none;
+    }
+  }
+}

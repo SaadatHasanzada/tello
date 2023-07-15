@@ -1,0 +1,40 @@
+@import '../../../assets/styles/variables.scss';
+
+.hamburger{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  gap: .3rem;
+ 
+  cursor: pointer;
+ 
+   div{
+    background-color: #1d2123;
+   
+    width: 100%;
+    height: .15rem;
+    transition: transform 0.3s;
+   
+   }
+  
+  &.open div:first-of-type {
+    transform: rotate(-45deg) translate(-2px, 8px);
+  }
+
+  &.open div:nth-of-type(2) {
+    opacity: 0;
+
+  }
+
+  &.open div:last-of-type {
+    transform: rotate(45deg) translate(-2px, -8px);
+  }
+  }
+  
+  @media screen and (min-width: $md) {
+    .hamburger {
+      display: none;
+    }
+  }

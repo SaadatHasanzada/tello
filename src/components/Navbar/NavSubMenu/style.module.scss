@@ -1,0 +1,65 @@
+@import "../../../assets//styles//common";
+@import "../../../assets/styles/variables.scss";
+
+.sub_menu {
+  @extend .menuStyle;
+  z-index: 5;
+  transition: all 0.3s;
+  height: 80vh;
+  a {
+    color: $secondary-color;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    &:hover {
+      color: $green;
+    }
+  }
+  p {
+    font-weight: 500;
+    i {
+      font-size: 1.2rem;
+    }
+  }
+}
+.show {
+  transform: translateX(0);
+}
+@media screen and (min-width: $md) {
+  .sub_menu {
+    gap: 1.3rem;
+    justify-content: flex-start;
+    flex-direction: row;
+    min-height: auto;
+    padding: 2rem 5%;
+    transition: none;
+    border-top: 1px solid $green;
+    height: auto;
+
+    li {
+      display: block;
+      text-align: center;
+      width: auto;
+      font-size: 1rem;
+      &:hover {
+        color: $green;
+      }
+      i {
+        display: none;
+      }
+    }
+
+    p {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .sub_menu {
+    gap: 3rem;
+    height: auto;
+  }
+}

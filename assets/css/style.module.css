@@ -1,0 +1,31 @@
+.item {
+  color: #303030;
+}
+.item .item_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.7rem;
+}
+.item .item_info h3 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.item .item_info P, .item .item_info span {
+  font-size: 10px;
+  font-weight: 400;
+}
+.item .item_info span {
+  color: #3366FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}

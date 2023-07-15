@@ -1,0 +1,11 @@
+@import "../../../assets/styles/variables.scss";
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+@media screen and (min-width: $md) {
+  .pagination {
+    grid-column: 2/3;
+  }
+}

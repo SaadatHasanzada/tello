@@ -1,0 +1,12 @@
+@import "../../assets/styles/globalStyles.scss";
+.product_container {
+  display: grid;
+  column-gap: 1.5rem;
+  align-items: start;
+}
+@media screen and (min-width: $md) {
+  .product_container {
+    padding: 1rem 5%;
+    grid-template-columns: 25% 75%;
+  }
+}

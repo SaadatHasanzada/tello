@@ -1,0 +1,22 @@
+@import '../../assets/styles/variables.scss';
+.ads{
+    margin-top: 3rem;
+    padding: 0 1rem;
+    div{
+display: grid;
+cursor: pointer;
+gap: 1.2rem;
+img{
+    width: 100%;
+}
+    }
+}
+
+@media screen and (min-width:$md) {
+    .ads{
+        padding: 0 5%;
+        div{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+}

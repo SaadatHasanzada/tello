@@ -1,0 +1,10 @@
+@import "../../../assets/styles/variables.scss";
+.orders {
+  width: 100%;
+  h2 {
+    color: $tab-color;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+}

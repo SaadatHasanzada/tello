@@ -1,0 +1,22 @@
+@import "../../../assets/styles/variables.scss";
+.cardInfo {
+  background-color: #faf9f9;
+  padding: 2.5rem 1rem;
+  p {
+    margin-bottom: 1.3rem;
+    color: #4f4f4f;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: $md) {
+  .cardInfo {
+    padding: 2.5rem 5%;
+    P {
+      margin-bottom: 2rem;
+    }
+  }
+}

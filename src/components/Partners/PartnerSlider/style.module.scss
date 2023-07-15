@@ -1,0 +1,16 @@
+@import '../../../assets/styles/variables.scss';
+.partner_slider{
+    display: none;
+    background-color:  #F5F5F7;
+    padding: 2.5rem 5% 1.5rem 5%;
+    // width: 80%;
+    .swiper{
+        padding-bottom: 3rem;
+       margin: 0 auto;
+    }
+}
+@media screen and (min-width:$md) {
+    .partner_slider{
+        display: block;
+    }
+}

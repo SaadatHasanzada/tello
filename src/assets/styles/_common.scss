@@ -1,0 +1,33 @@
+@import './variables.scss';
+.menuStyle{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    position: absolute;
+    top: 100%;
+    padding: 1rem;
+    width: 100%;
+    left: 0;
+    min-height: 60vh;
+    transition: all .1s ease;
+    transform: translateX(-100%);
+    background-color: $primary-color;
+    color: $secondary-color;  
+    border-top: 1px solid rgb(48, 48, 48,.16);
+    li,p{
+      width: 100%; 
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: .2s all ease;
+      
+      
+      i{
+        font-size: .8rem;
+      }
+    }
+}
+
+

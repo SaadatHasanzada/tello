@@ -1,0 +1,11 @@
+@import '../../../assets/styles/variables.scss';
+.social_media{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    a:hover > img{
+        transition: all .3s ease; 
+        filter: brightness(0) saturate(100%) invert(79%) sepia(35%) saturate(7362%) hue-rotate(96deg) brightness(114%) contrast(65%);
+    }
+}

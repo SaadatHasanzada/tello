@@ -1,0 +1,32 @@
+@import '../../../assets/styles/variables.scss';
+.footer_credit{
+    display: flex;
+    flex-direction: column;
+
+    div{
+        padding: 2rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        &:last-child{
+            border-top: 1px solid rgba(255,255,255,.1);
+            gap: .8rem;
+        }
+    }
+}
+@media screen and (min-width:$md){
+    .footer_credit{
+        flex-direction: row;
+        border-top: 1px solid rgba(255,255,255,.1);
+        justify-content: space-between;
+        div{
+            padding: 2rem 5%;
+            &:last-child{
+                border-top: none;
+               order: -1;
+               
+            }
+        }
+    }
+}
