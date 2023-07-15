@@ -1,5 +1,5 @@
 
-<h1>Tech Academy - Software Final Project </h1>
+<p><h1>Tech Academy - Software Final Project </h1>
 <h3>Overview</h3>
 <p>E-commerce website</p>
 <h4>Features</h4>
@@ -17,6 +17,8 @@
   <li>Front-end: HTML, CSS, JavaScript, React, Redux</li>
   <li>Back-end: Commerce.js</li>
 </ul>
-<h4>DEMO</h4>
+<h4>DEMO</h4></p>
+
 Check out the live demo of the project [here](https://tello-commerce.netlify.app).
+
 
